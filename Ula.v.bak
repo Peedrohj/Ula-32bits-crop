@@ -1,0 +1,19 @@
+module alu(input1, input2, opCode, shiftAmmount, result);
+	input signed [31:0] input1, input2;
+	input [3:0] opCode;
+	input [4:0] shiftAmmount;
+	output signed [31:0] result;
+	
+	assign result = opCode == 0 ? input1 + input2:
+						 opCode == 1 ? input1 - input2:
+						 opCode == 0 ? input1 + input2:
+						 opCode == 1 ? input1 - input2:
+						 opCode == 0 ? input1 + input2:
+						 opCode == 1 ? input1 - input2:
+						 opCode == 0 ? input1 + input2:
+						 opCode == 1 ? input1 - input2:
+						 opCode == 0 ? input1 + input2:
+						 opCode == 1 ? input1 - input2:
+						 opCode == 0 ? input1 + input2:
+						 opCode == 1 ? input1 - input2:
+						 
