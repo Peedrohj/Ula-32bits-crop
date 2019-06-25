@@ -72,5 +72,4 @@ module AluControl(aluOp, funct, opCode, aluControlOut);
 		end
 	end
 endmodule				 
-endmodule
 						 
