@@ -1,26 +1,28 @@
-module Ula(input1, input2, shamt, result, aluOp, funct);
+module Ula(input1, input2, shamt, result, aluOp, funct, opCode);
 	wire [3:0] aluControlOut;
 	input signed [31:0] input1, input2;
 	input [4:0] shamt;
-	// input [5:0] opCode;
+	input [5:0] opCode;
 	input [5:0] funct;
 	input [1:0] aluOp;
 	output wire [31:0] result;
 	// output [1:0] isOverflowed;
 	// output [5:0] opOverflowed;
 	
-	MainUla mainUla(.inputUla1(input1), .inputUla2(input2), .aluControlOutUla(4'b0000), .shamtUla(shamt), .resultUla(result));
+	AluControl aluControl(.aluOpControl(aluOp), .functControl(func), .opCodeControl(opCode), .aluControlOutContrlol(aluControlOut));
+	
+	MainUla mainUla(.inputUla1(input1), .inputUla2(input2), .aluControlOutUla(aluControlOut), .shamtUla(shamt), .resultUla(result), .opCodeUla(opCode));
 	
 	
 
 endmodule
 
 
-module MainUla(inputUla1, inputUla2, aluControlOutUla, shamtUla, resultUla);
+module MainUla(inputUla1, inputUla2, aluControlOutUla, shamtUla, resultUla, opCodeUla);
 	input signed [31:0] inputUla1, inputUla2;
 	input [3:0] aluControlOutUla;
 	input [4:0] shamtUla;
-	//input [5:0] opCodeUla;
+	input [5:0] opCodeUla;
 	output wire signed [31:0] resultUla;
 	//output [1:0] isOverflowedUla;
 	//output [5:0] opOverflowedUla;
@@ -46,30 +48,29 @@ module MainUla(inputUla1, inputUla2, aluControlOutUla, shamtUla, resultUla);
 	//end
 endmodule
 
-module AluControl(aluOp, funct, opCode, aluControlOut);
-	input [5:0] funct;
-	input [5:0] opCode;
-	input [1:0] aluOp;
-	output reg [2:0] aluControlOut;
+module AluControl(aluOpControl, functControl, opCodeControl, aluControlOutContrlol);
+	input [5:0] functControl;
+	input [5:0] opCodeControl;
+	input [1:0] aluOpControl;
+	output reg [2:0] aluControlOutContrlol;
 	assign isOverflowed = 0;
 
 	
 	always @(*) begin
-		if(aluOp == 0) begin
-			assign aluControlOut = 0; // Chama um add pq era addi
-		end if(aluOp == 1) begin
-			assign aluControlOut = 2; // chama um and pq era andi
-		end if(aluOp == 2) begin
+		if(aluOpControl == 0) begin
+			aluControlOutContrlol = 0; // Chama um add pq era addi
+		end if(aluOpControl == 1) begin
+			aluControlOutContrlol = 2; // chama um and pq era andi
+		end if(aluOpControl == 2) begin
 			
-			assign aluControlOut = funct == 0 ? 4: // SLL
-			funct == 2 ? 5:	// SRL
-			funct == 3 ? 6: // SRA
-			funct == 32 ? 0: // ADD
-			funct == 34 ? 1: // SUB
-			funct == 36 ? 2: // AND | ANDI
-			funct == 37 ? 3: // OR
-			funct == 42 ? 7: 0; // SLT 
+			aluControlOutContrlol = functControl == 0 ? 4: // SLL
+			functControl == 2 ? 5:	// SRL
+			functControl == 3 ? 6: // SRA
+			functControl == 32 ? 0: // ADD
+			functControl == 34 ? 1: // SUB
+			functControl == 36 ? 2: // AND | ANDI
+			functControl == 37 ? 3: // OR
+			functControl == 42 ? 7: 0; // SLT 
 		end
 	end
 endmodule				 
-						 

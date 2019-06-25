@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ula
-Tue Jun 25 13:09:17 2019
+Tue Jun 25 15:55:38 2019
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -13,12 +13,13 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
+  8. User-Specified and Inferred Latches
   9. General Register Statistics
  10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+ 11. Port Connectivity Checks: "AluControl:aluControl"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +46,16 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jun 25 13:09:17 2019      ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun 25 15:55:38 2019      ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                      ; Ula                                        ;
 ; Top-level Entity Name              ; Ula                                        ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 600                                        ;
-;     Total combinational functions  ; 600                                        ;
-;     Dedicated logic registers      ; 32                                         ;
-; Total registers                    ; 32                                         ;
-; Total pins                         ; 110                                        ;
+; Total logic elements               ; 430                                        ;
+;     Total combinational functions  ; 430                                        ;
+;     Dedicated logic registers      ; 0                                          ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 115                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -154,7 +155,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 8      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -164,7 +165,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                     ; Library ;
 +----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
-; Ula.v                            ; yes             ; User Verilog HDL File  ; /home/arthur/Documents/Git/Ula-32bits-crop/Ula.v ;         ;
+; Ula.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/Ula.v ;         ;
 +----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
 
 
@@ -173,54 +174,55 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 600            ;
+; Estimated Total logic elements              ; 430            ;
 ;                                             ;                ;
-; Total combinational functions               ; 600            ;
+; Total combinational functions               ; 430            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 267            ;
-;     -- 3 input functions                    ; 292            ;
-;     -- <=2 input functions                  ; 41             ;
+;     -- 4 input functions                    ; 184            ;
+;     -- 3 input functions                    ; 204            ;
+;     -- <=2 input functions                  ; 42             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 507            ;
-;     -- arithmetic mode                      ; 93             ;
+;     -- normal mode                          ; 399            ;
+;     -- arithmetic mode                      ; 31             ;
 ;                                             ;                ;
-; Total registers                             ; 32             ;
-;     -- Dedicated logic registers            ; 32             ;
+; Total registers                             ; 0              ;
+;     -- Dedicated logic registers            ; 0              ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
-; I/O pins                                    ; 110            ;
+; I/O pins                                    ; 115            ;
 ;                                             ;                ;
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; shamt[1]~input ;
-; Maximum fan-out                             ; 87             ;
-; Total fan-out                               ; 2256           ;
-; Average fan-out                             ; 2.65           ;
+; Maximum fan-out                             ; 76             ;
+; Total fan-out                               ; 1579           ;
+; Average fan-out                             ; 2.39           ;
 +---------------------------------------------+----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |Ula                       ; 600 (600)         ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 110  ; 0            ; |Ula                ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
+; |Ula                       ; 430 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 115  ; 0            ; |Ula                       ; work         ;
+;    |AluControl:aluControl| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Ula|AluControl:aluControl ; work         ;
+;    |MainUla:mainUla|       ; 425 (425)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Ula|MainUla:mainUla       ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                  ;
-+---------------------------------------+---------------------------------------------+
-; Register name                         ; Reason for Removal                          ;
-+---------------------------------------+---------------------------------------------+
-; opOverflowed[1]~reg0                  ; Stuck at GND due to stuck port data_in      ;
-; isOverflowed[0]~reg0                  ; Stuck at VCC due to stuck port data_in      ;
-; isOverflowed[1]~reg0                  ; Stuck at GND due to stuck port data_in      ;
-; opOverflowed[0]~reg0                  ; Stuck at GND due to stuck port clock_enable ;
-; Total Number of Removed Registers = 4 ;                                             ;
-+---------------------------------------+---------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                          ;
++----------------------------------------------------+------------------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                            ; Free of Timing Hazards ;
++----------------------------------------------------+------------------------------------------------+------------------------+
+; AluControl:aluControl|aluControlOutContrlol[2]     ; AluControl:aluControl|aluControlOutContrlol[2] ; yes                    ;
+; AluControl:aluControl|aluControlOutContrlol[1]     ; AluControl:aluControl|aluControlOutContrlol[2] ; yes                    ;
+; Number of user-specified and inferred latches = 2  ;                                                ;                        ;
++----------------------------------------------------+------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -228,9 +230,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 32    ;
-; Number of registers using Synchronous Clear  ; 8     ;
-; Number of registers using Synchronous Load   ; 8     ;
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
@@ -238,18 +240,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 11:1               ; 8 bits    ; 56 LEs        ; 48 LEs               ; 8 LEs                  ; Yes        ; |Ula|result[15]~reg0       ;
-; 12:1               ; 7 bits    ; 56 LEs        ; 49 LEs               ; 7 LEs                  ; Yes        ; |Ula|result[21]~reg0       ;
-; 12:1               ; 4 bits    ; 32 LEs        ; 28 LEs               ; 4 LEs                  ; Yes        ; |Ula|result[7]~reg0        ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |Ula|result[24]~reg0       ;
-; 13:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; Yes        ; |Ula|result[3]~reg0        ;
-; 14:1               ; 2 bits    ; 18 LEs        ; 16 LEs               ; 2 LEs                  ; Yes        ; |Ula|result[28]~reg0       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; No         ; |Ula|MainUla:mainUla|resultUla[9]  ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; No         ; |Ula|MainUla:mainUla|resultUla[17] ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |Ula|MainUla:mainUla|resultUla[7]  ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 20 LEs               ; 4 LEs                  ; No         ; |Ula|MainUla:mainUla|resultUla[27] ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |Ula|MainUla:mainUla|resultUla[2]  ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Ula|MainUla:mainUla|resultUla[28] ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |Ula|MainUla:mainUla|resultUla[1]  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "AluControl:aluControl"                                                                                                                                                                 ;
++-----------------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                  ; Type   ; Severity ; Details                                                                                                                                                               ;
++-----------------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; functControl          ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (6 bits) it drives.  Extra input bit(s) "functControl[5..1]" will be connected to GND.                  ;
+; aluControlOutContrlol ; Output ; Warning  ; Output or bidir port (3 bits) is smaller than the port expression (4 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++-----------------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -257,21 +270,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 110                         ;
-; cycloneiii_ff         ; 32                          ;
-;     SCLR SLD          ; 8                           ;
-;     plain             ; 24                          ;
-; cycloneiii_lcell_comb ; 602                         ;
-;     arith             ; 93                          ;
-;         3 data inputs ; 93                          ;
-;     normal            ; 509                         ;
-;         0 data inputs ; 2                           ;
-;         2 data inputs ; 41                          ;
-;         3 data inputs ; 199                         ;
-;         4 data inputs ; 267                         ;
+; boundary_port         ; 115                         ;
+; cycloneiii_lcell_comb ; 430                         ;
+;     arith             ; 31                          ;
+;         3 data inputs ; 31                          ;
+;     normal            ; 399                         ;
+;         2 data inputs ; 42                          ;
+;         3 data inputs ; 173                         ;
+;         4 data inputs ; 184                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.00                       ;
-; Average LUT depth     ; 7.29                        ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 6.30                        ;
 +-----------------------+-----------------------------+
 
 
@@ -280,7 +289,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -290,32 +299,55 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Tue Jun 25 13:08:57 2019
+    Info: Processing started: Tue Jun 25 15:55:16 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ula -c Ula
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 2 entities, in source file Ula.v
+Info (12021): Found 3 design units, including 3 entities, in source file ula.v
     Info (12023): Found entity 1: Ula
-    Info (12023): Found entity 2: aluControl
-Warning (10236): Verilog HDL Implicit Net warning at Ula.v(37): created implicit net for "isOverflowed"
+    Info (12023): Found entity 2: MainUla
+    Info (12023): Found entity 3: AluControl
+Warning (10236): Verilog HDL Implicit Net warning at Ula.v(12): created implicit net for "func"
+Warning (10236): Verilog HDL Implicit Net warning at Ula.v(56): created implicit net for "isOverflowed"
 Info (12127): Elaborating entity "Ula" for the top level hierarchy
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "isOverflowed[0]" is stuck at VCC
-    Warning (13410): Pin "isOverflowed[1]" is stuck at GND
-    Warning (13410): Pin "opOverflowed[0]" is stuck at GND
-    Warning (13410): Pin "opOverflowed[1]" is stuck at GND
+Info (12128): Elaborating entity "AluControl" for hierarchy "AluControl:aluControl"
+Warning (10036): Verilog HDL or VHDL warning at Ula.v(56): object "isOverflowed" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at Ula.v(66): truncated value with size 32 to match size of target (3)
+Warning (10240): Verilog HDL Always Construct warning at Ula.v(60): inferring latch(es) for variable "aluControlOutContrlol", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "aluControlOutContrlol[0]" at Ula.v(64)
+Info (10041): Inferred latch for "aluControlOutContrlol[1]" at Ula.v(64)
+Info (10041): Inferred latch for "aluControlOutContrlol[2]" at Ula.v(64)
+Info (12128): Elaborating entity "MainUla" for hierarchy "MainUla:mainUla"
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "aluControlOut[3]" is missing source, defaulting to GND
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13012): Latch AluControl:aluControl|aluControlOutContrlol[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal aluOp[0]
+Warning (13012): Latch AluControl:aluControl|aluControlOutContrlol[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal aluOp[0]
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "opCode"
-Info (21057): Implemented 710 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 74 input pins
-    Info (21059): Implemented 36 output pins
-    Info (21061): Implemented 600 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 956 megabytes
-    Info: Processing ended: Tue Jun 25 13:09:17 2019
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:43
+Warning (21074): Design contains 12 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "funct[0]"
+    Warning (15610): No output dependent on input pin "funct[1]"
+    Warning (15610): No output dependent on input pin "funct[2]"
+    Warning (15610): No output dependent on input pin "funct[3]"
+    Warning (15610): No output dependent on input pin "funct[4]"
+    Warning (15610): No output dependent on input pin "funct[5]"
+    Warning (15610): No output dependent on input pin "opCode[0]"
+    Warning (15610): No output dependent on input pin "opCode[1]"
+    Warning (15610): No output dependent on input pin "opCode[2]"
+    Warning (15610): No output dependent on input pin "opCode[3]"
+    Warning (15610): No output dependent on input pin "opCode[4]"
+    Warning (15610): No output dependent on input pin "opCode[5]"
+Info (21057): Implemented 545 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 83 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 430 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
+    Info: Peak virtual memory: 4825 megabytes
+    Info: Processing ended: Tue Jun 25 15:55:39 2019
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:42
 
 
