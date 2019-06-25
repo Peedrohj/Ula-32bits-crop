@@ -12,10 +12,10 @@ module Ula(input1, input2, aluControlOut, shamt, result, opCode, clk, isOverflow
 	always @ (posedge clk) begin
 		if(input1 + input2 > 2147483647) begin
 			// foi overflow	
-			assign isOverflowed = 01;
-			assign opOverflowed = opCode;
+			isOverflowed <= 01;
+			opOverflowed <= opCode;
 		end else begin 
-				assign result = aluControlOut == 0 ? input1 + input2: //ADD/ADDi
+				result <= aluControlOut == 0 ? input1 + input2: //ADD/ADDi
 									 aluControlOut == 1 ? input1 - input2: //SUB
 									 aluControlOut == 2 ? input1 & input2: //AND/ANDi
 									 aluControlOut == 3 ? input1 | input2: //OR

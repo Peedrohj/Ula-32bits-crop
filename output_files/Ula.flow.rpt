@@ -1,5 +1,5 @@
 Flow report for Ula
-Tue Jun 25 11:41:40 2019
+Tue Jun 25 13:09:45 2019
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -41,20 +41,22 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Flow Failed - Tue Jun 25 11:41:40 2019     ;
+; Flow Status                        ; Successful - Tue Jun 25 13:09:45 2019      ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                      ; Ula                                        ;
 ; Top-level Entity Name              ; Ula                                        ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; N/A until Partition Merge                  ;
-;     Total combinational functions  ; N/A until Partition Merge                  ;
-;     Dedicated logic registers      ; N/A until Partition Merge                  ;
-; Total registers                    ; N/A until Partition Merge                  ;
-; Total pins                         ; N/A until Partition Merge                  ;
-; Total virtual pins                 ; N/A until Partition Merge                  ;
-; Total memory bits                  ; N/A until Partition Merge                  ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
-; Total PLLs                         ; N/A until Partition Merge                  ;
+; Total logic elements               ; 600 / 6,272 ( 10 % )                       ;
+;     Total combinational functions  ; 600 / 6,272 ( 10 % )                       ;
+;     Dedicated logic registers      ; 32 / 6,272 ( < 1 % )                       ;
+; Total registers                    ; 32                                         ;
+; Total pins                         ; 110 / 180 ( 61 % )                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0 / 276,480 ( 0 % )                        ;
+; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                              ;
+; Device                             ; EP4CE6F17C6                                ;
+; Timing Models                      ; Final                                      ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -63,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/25/2019 11:41:27 ;
+; Start date & time ; 06/25/2019 13:08:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Ula                 ;
 +-------------------+---------------------+
@@ -74,7 +76,7 @@ agreement for further details.
 +-------------------------------------+---------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                     ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.156147368701832         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.156147893802760         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl               ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog) ; <None>        ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                  ; --            ; --          ; Top            ;
@@ -84,29 +86,41 @@ agreement for further details.
 +-------------------------------------+---------------------------+---------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 896 MB              ; 00:00:34                           ;
-; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:34                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 903 MB              ; 00:00:43                           ;
+; Fitter                    ; 00:00:10     ; 1.0                     ; 1086 MB             ; 00:00:10                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 815 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 864 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1073 MB             ; 00:00:02                           ;
+; Total                     ; 00:00:35     ; --                      ; --                  ; 00:00:59                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                      ;
-+----------------------+------------------+--------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name      ; OS Version ; Processor type ;
-+----------------------+------------------+--------------+------------+----------------+
-; Analysis & Synthesis ; aspire-e5-573g   ; Ubuntu 19.04 ; 19         ; x86_64         ;
-+----------------------+------------------+--------------+------------+----------------+
++-------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                           ;
++---------------------------+------------------+--------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name      ; OS Version ; Processor type ;
++---------------------------+------------------+--------------+------------+----------------+
+; Analysis & Synthesis      ; aspire-e5-573g   ; Ubuntu 19.04 ; 19         ; x86_64         ;
+; Fitter                    ; aspire-e5-573g   ; Ubuntu 19.04 ; 19         ; x86_64         ;
+; Assembler                 ; aspire-e5-573g   ; Ubuntu 19.04 ; 19         ; x86_64         ;
+; TimeQuest Timing Analyzer ; aspire-e5-573g   ; Ubuntu 19.04 ; 19         ; x86_64         ;
+; EDA Netlist Writer        ; aspire-e5-573g   ; Ubuntu 19.04 ; 19         ; x86_64         ;
++---------------------------+------------------+--------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Ula -c Ula
+quartus_fit --read_settings_files=off --write_settings_files=off Ula -c Ula
+quartus_asm --read_settings_files=off --write_settings_files=off Ula -c Ula
+quartus_sta Ula -c Ula
+quartus_eda --read_settings_files=off --write_settings_files=off Ula -c Ula
 
 
 
