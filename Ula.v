@@ -1,7 +1,6 @@
-module Ula(input1, input2, shamt, result, aluOp, funct, opCode);
+module Ula(input1, input2, result, aluOp, funct, opCode);
 	wire [3:0] aluControlOut;
 	input signed [31:0] input1, input2;
-	input [4:0] shamt;
 	input [5:0] opCode;
 	input [5:0] funct;
 	input [1:0] aluOp;
@@ -9,19 +8,18 @@ module Ula(input1, input2, shamt, result, aluOp, funct, opCode);
 	// output [1:0] isOverflowed;
 	// output [5:0] opOverflowed;
 	
-	AluControl aluControl(.aluOpControl(aluOp), .functControl(func), .opCodeControl(opCode), .aluControlOutContrlol(aluControlOut));
+	AluControl aluControl(.aluOpControl(aluOp), .functControl(func), .opCodeControl(opCode), .aluControlOutControl(aluControlOut));
 	
-	MainUla mainUla(.inputUla1(input1), .inputUla2(input2), .aluControlOutUla(aluControlOut), .shamtUla(shamt), .resultUla(result), .opCodeUla(opCode));
+	MainUla mainUla(.inputUla1(input1), .inputUla2(input2), .aluControlOutUla(aluControlOut), .resultUla(result), .opCodeUla(opCode));
 	
 	
 
 endmodule
 
 
-module MainUla(inputUla1, inputUla2, aluControlOutUla, shamtUla, resultUla, opCodeUla,isOverflowedUla);
+module MainUla(inputUla1, inputUla2, aluControlOutUla, resultUla, opCodeUla,isOverflowedUla);
 	input signed [31:0] inputUla1, inputUla2;
 	input [3:0] aluControlOutUla;
-	input [4:0] shamtUla;
 	input [5:0] opCodeUla;
 	output wire signed [31:0] resultUla;
 	output wire [1:0] isOverflowedUla;
@@ -39,30 +37,30 @@ module MainUla(inputUla1, inputUla2, aluControlOutUla, shamtUla, resultUla, opCo
 						 (aluControlOutUla == 4'b0001) ? inputUla1 - inputUla2: //SUB
 						 (aluControlOutUla == 4'b0010) ? inputUla1 & inputUla2: //AND/ANDi
 						 (aluControlOutUla == 4'b0011) ? inputUla1 | inputUla2: //OR
-						 (aluControlOutUla == 4'b00100) ? inputUla1 << shamtUla: //SLL
-						 (aluControlOutUla == 4'b0101) ? inputUla1 >> shamtUla: //SRL
-						 aluControlOutUla == 4'b0110 ? inputUla1 >>> shamtUla: //SRA
+						 (aluControlOutUla == 4'b00100) ? inputUla2 << inputUla1: //SLL
+						 (aluControlOutUla == 4'b0101) ? inputUla2 >> inputUla1: //SRL
+						 aluControlOutUla == 4'b0110 ? inputUla2 >>> inputUla1: //SRA
 						 aluControlOutUla == 4'b0111 ? inputUla1 < inputUla2 ? 1 : 0 : 0; //SLT
 		//end
 	//end
 endmodule
 
-module AluControl(aluOpControl, functControl, opCodeControl, aluControlOutContrlol);
+module AluControl(aluOpControl, functControl, opCodeControl, aluControlOutControl);
 	input [5:0] functControl;
 	input [5:0] opCodeControl;
 	input [1:0] aluOpControl;
-	output reg [2:0] aluControlOutContrlol;
+	output reg [2:0] aluControlOutControl;
 	assign isOverflowed = 0;
 
 	
 	always @(*) begin
 		if(aluOpControl == 0) begin
-			aluControlOutContrlol = 0; // Chama um add pq era addi
+			aluControlOutControl = 0; // Chama um add pq era addi
 		end if(aluOpControl == 1) begin
-			aluControlOutContrlol = 2; // chama um and pq era andi
+			aluControlOutControl = 2; // chama um and pq era andi
 		end if(aluOpControl == 2) begin
 			
-			aluControlOutContrlol = functControl == 0 ? 4: // SLL
+			aluControlOutControl = functControl == 0 ? 4: // SLL
 			functControl == 2 ? 5:	// SRL
 			functControl == 3 ? 6: // SRA
 			functControl == 32 ? 0: // ADD
