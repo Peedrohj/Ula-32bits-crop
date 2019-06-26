@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/25/2019 16:07:52"
+// Generated on "06/25/2019 16:27:08"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    Ula
 // 
@@ -755,7 +755,7 @@ end
 // funct[ 5 ]
 initial
 begin
-	funct[5] = 1'b0;
+	funct[5] = 1'b1;
 end 
 // funct[ 4 ]
 initial
@@ -910,22 +910,22 @@ end
 // input1[ 6 ]
 initial
 begin
-	input1[6] = 1'b0;
+	input1[6] = 1'b1;
 end 
 // input1[ 5 ]
 initial
 begin
-	input1[5] = 1'b0;
+	input1[5] = 1'b1;
 end 
 // input1[ 4 ]
 initial
 begin
-	input1[4] = 1'b0;
+	input1[4] = 1'b1;
 end 
 // input1[ 3 ]
 initial
 begin
-	input1[3] = 1'b0;
+	input1[3] = 1'b1;
 end 
 // input1[ 2 ]
 initial
@@ -935,7 +935,7 @@ end
 // input1[ 1 ]
 initial
 begin
-	input1[1] = 1'b0;
+	input1[1] = 1'b1;
 end 
 // input1[ 0 ]
 initial
@@ -1085,17 +1085,17 @@ end
 // input2[ 3 ]
 initial
 begin
-	input2[3] = 1'b0;
+	input2[3] = 1'b1;
 end 
 // input2[ 2 ]
 initial
 begin
-	input2[2] = 1'b0;
+	input2[2] = 1'b1;
 end 
 // input2[ 1 ]
 initial
 begin
-	input2[1] = 1'b1;
+	input2[1] = 1'b0;
 end 
 // input2[ 0 ]
 initial
@@ -1150,7 +1150,7 @@ end
 // shamt[ 1 ]
 initial
 begin
-	shamt[1] = 1'b1;
+	shamt[1] = 1'b0;
 end 
 // shamt[ 0 ]
 initial

@@ -18,24 +18,23 @@ module Ula(input1, input2, shamt, result, aluOp, funct, opCode);
 endmodule
 
 
-module MainUla(inputUla1, inputUla2, aluControlOutUla, shamtUla, resultUla, opCodeUla);
+module MainUla(inputUla1, inputUla2, aluControlOutUla, shamtUla, resultUla, opCodeUla,isOverflowedUla);
 	input signed [31:0] inputUla1, inputUla2;
 	input [3:0] aluControlOutUla;
 	input [4:0] shamtUla;
 	input [5:0] opCodeUla;
 	output wire signed [31:0] resultUla;
-	//output [1:0] isOverflowedUla;
-	//output [5:0] opOverflowedUla;
+	output wire [1:0] isOverflowedUla;
+	wire signed [32:0] resultOverflowed;
 	
 	// OverflowCheck
+	
+	//soma os inputs e coloca em um wire com 1 bit a mais, após isso pega o MBS, que determina se foi overflow ou não;
 	/*
-	always @ (posedge clk) begin
-		if(input1 + input2 > 2147483647) begin
-			// foi overflow	
-			isOverflowed = 2'b11;
-			opOverflowed = 6'b101010;
-		end else begin
+	assign resultOverflowed = inputUla1 + inputUla2;
+	assign isOverflowedUla = (aluControlOutUla == 4'b0000) ? resultOverflowed[32]:0;
 	*/
+
 	assign resultUla[31:0] = (aluControlOutUla == 4'b0000) ? inputUla1 + inputUla2: //ADD/ADDi
 						 (aluControlOutUla == 4'b0001) ? inputUla1 - inputUla2: //SUB
 						 (aluControlOutUla == 4'b0010) ? inputUla1 & inputUla2: //AND/ANDi

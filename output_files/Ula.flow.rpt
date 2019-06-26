@@ -1,5 +1,5 @@
 Flow report for Ula
-Tue Jun 25 16:07:56 2019
+Tue Jun 25 17:12:33 2019
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue Jun 25 16:07:56 2019      ;
+; Flow Status                        ; Successful - Tue Jun 25 17:12:33 2019      ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                      ; Ula                                        ;
 ; Top-level Entity Name              ; Ula                                        ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/25/2019 15:55:17 ;
+; Start date & time ; 06/25/2019 17:11:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Ula                 ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 84497307262790.156148891714804 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 84497307262790.156149348300216 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                       ; --            ; --          ; Top            ;
@@ -91,24 +91,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:22     ; 1.0                     ; 4810 MB             ; 00:00:41                           ;
-; Fitter                    ; 00:00:14     ; 1.0                     ; 5168 MB             ; 00:00:14                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4761 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 4850 MB             ; 00:00:07                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4728 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4711 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4715 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4711 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4715 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4711 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4715 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4711 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4715 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4711 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4715 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4711 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4715 MB             ; 00:00:02                           ;
-; Total                     ; 00:01:15     ; --                      ; --                  ; 00:01:30                           ;
+; Analysis & Synthesis      ; 00:00:22     ; 1.0                     ; 4809 MB             ; 00:00:41                           ;
+; Fitter                    ; 00:00:17     ; 1.0                     ; 5167 MB             ; 00:00:14                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4761 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 4851 MB             ; 00:00:07                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4732 MB             ; 00:00:03                           ;
+; Total                     ; 00:00:55     ; --                      ; --                  ; 00:01:07                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -122,18 +110,6 @@ agreement for further details.
 ; Assembler                 ; LABNT033-013458  ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; LABNT033-013458  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; LABNT033-013458  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LABNT033-013458  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LABNT033-013458  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LABNT033-013458  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LABNT033-013458  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LABNT033-013458  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LABNT033-013458  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LABNT033-013458  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LABNT033-013458  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LABNT033-013458  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LABNT033-013458  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LABNT033-013458  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LABNT033-013458  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -145,18 +121,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off Ula -c Ula
 quartus_asm --read_settings_files=off --write_settings_files=off Ula -c Ula
 quartus_sta Ula -c Ula
 quartus_eda --read_settings_files=off --write_settings_files=off Ula -c Ula
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off Ula -c Ula --vector_source=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/Waveform.vwf --testbench_file=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/simulation/qsim/ Ula -c Ula
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off Ula -c Ula --vector_source=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/Waveform.vwf --testbench_file=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/simulation/qsim/ Ula -c Ula
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off Ula -c Ula --vector_source=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/Waveform.vwf --testbench_file=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/simulation/qsim/ Ula -c Ula
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off Ula -c Ula --vector_source=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/Waveform.vwf --testbench_file=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/simulation/qsim/ Ula -c Ula
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off Ula -c Ula --vector_source=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/Waveform.vwf --testbench_file=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/simulation/qsim/ Ula -c Ula
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog --write_settings_files=off Ula -c Ula --vector_source=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/Waveform.vwf --testbench_file=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/simulation/qsim/ Ula -c Ula
 
 
 

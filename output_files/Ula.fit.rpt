@@ -1,5 +1,5 @@
 Fitter report for Ula
-Tue Jun 25 15:55:56 2019
+Tue Jun 25 17:12:05 2019
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -67,7 +67,7 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Tue Jun 25 15:55:56 2019      ;
+; Fitter Status                      ; Successful - Tue Jun 25 17:12:05 2019      ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                      ; Ula                                        ;
 ; Top-level Entity Name              ; Ula                                        ;
@@ -1150,14 +1150,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; opCode[4]                                               ;                   ;         ;
 ; opCode[5]                                               ;                   ;         ;
 ; input1[15]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~30                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~30                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~2                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~50                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~112                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~59                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~66                    ; 0                 ; 6       ;
 ; input1[13]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~26                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~26                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~2                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~52                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~104                    ; 0                 ; 6       ;
@@ -1241,14 +1241,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|ShiftLeft0~105                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~108                   ; 0                 ; 6       ;
 ; input1[14]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~28                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~28                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~3                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~27                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~108                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~54                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~63                    ; 1                 ; 6       ;
 ; input1[12]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~24                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~24                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~3                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~29                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~99                     ; 1                 ; 6       ;
@@ -1331,28 +1331,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|ShiftLeft0~103                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~104                   ; 1                 ; 6       ;
 ; input1[11]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~22                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~22                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~5                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~52                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~95                     ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~40                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~49                    ; 0                 ; 6       ;
 ; input1[9]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~18                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~18                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~5                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~48                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~87                     ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~32                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~40                    ; 0                 ; 6       ;
 ; input1[10]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~20                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~20                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~6                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~29                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~91                     ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~36                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~45                    ; 0                 ; 6       ;
 ; input1[8]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~16                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~16                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~6                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~33                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~47                   ; 0                 ; 6       ;
@@ -1490,7 +1490,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|ShiftLeft0~109                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~98                   ; 0                 ; 6       ;
 ; input1[0]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~0                           ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~0                           ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~33                     ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla[0]~37                  ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~5                     ; 1                 ; 6       ;
@@ -1500,10 +1500,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|ShiftLeft0~17                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~31                    ; 1                 ; 6       ;
 ; input2[0]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~0                           ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~0                           ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~33                     ; 0                 ; 6       ;
 ; input1[1]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~2                           ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~2                           ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla[0]~38                  ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~43                     ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla[1]~44                  ; 0                 ; 6       ;
@@ -1512,7 +1512,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|ShiftLeft0~13                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~17                    ; 0                 ; 6       ;
 ; input1[3]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~6                           ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~6                           ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~9                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~32                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~10                    ; 0                 ; 6       ;
@@ -1520,7 +1520,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|ShiftLeft0~13                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~18                    ; 0                 ; 6       ;
 ; input1[2]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~4                           ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~4                           ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~9                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla[1]~45                  ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~8                     ; 0                 ; 6       ;
@@ -1528,7 +1528,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|ShiftLeft0~10                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~14                    ; 0                 ; 6       ;
 ; input1[7]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~14                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~14                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~10                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~33                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~48                   ; 1                 ; 6       ;
@@ -1536,7 +1536,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|ShiftLeft0~25                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~32                    ; 1                 ; 6       ;
 ; input1[6]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~12                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~12                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~10                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~34                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~47                   ; 1                 ; 6       ;
@@ -1544,21 +1544,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|ShiftLeft0~21                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~28                    ; 1                 ; 6       ;
 ; input1[5]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~10                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~10                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~11                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~34                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~71                     ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~18                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~25                    ; 0                 ; 6       ;
 ; input1[4]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~8                           ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~8                           ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~11                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~32                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~63                     ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~14                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~21                    ; 0                 ; 6       ;
 ; input1[27]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~54                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~54                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~13                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~56                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~69                   ; 0                 ; 6       ;
@@ -1566,7 +1566,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|resultUla~174                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~97                    ; 0                 ; 6       ;
 ; input1[25]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~50                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~50                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~13                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~59                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~89                    ; 0                 ; 6       ;
@@ -1574,14 +1574,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|ShiftLeft0~92                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~94                    ; 0                 ; 6       ;
 ; input1[26]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~52                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~52                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~14                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~38                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~92                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~169                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~95                    ; 0                 ; 6       ;
 ; input1[24]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~48                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~48                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~14                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~41                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~87                    ; 1                 ; 6       ;
@@ -1589,7 +1589,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|ShiftLeft0~91                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~94                    ; 1                 ; 6       ;
 ; input1[31]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~62                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~62                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~16                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~37                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~55                   ; 1                 ; 6       ;
@@ -1624,7 +1624,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|resultUla[31]~199                ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~98                   ; 1                 ; 6       ;
 ; input1[29]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~58                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~58                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~16                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~36                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~56                   ; 0                 ; 6       ;
@@ -1632,7 +1632,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|resultUla~189                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~99                    ; 0                 ; 6       ;
 ; input1[30]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~60                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~60                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~17                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~36                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~55                   ; 0                 ; 6       ;
@@ -1643,7 +1643,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|ShiftRight1~97                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~104                   ; 0                 ; 6       ;
 ; input1[28]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~56                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~56                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~17                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~38                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~69                   ; 1                 ; 6       ;
@@ -1651,7 +1651,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|resultUla~181                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~98                    ; 1                 ; 6       ;
 ; input1[23]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~46                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~46                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~19                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~59                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~84                    ; 1                 ; 6       ;
@@ -1659,138 +1659,138 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MainUla:mainUla|ShiftLeft0~89                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~91                    ; 1                 ; 6       ;
 ; input1[21]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~42                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~42                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~19                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~61                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~78                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~142                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~84                    ; 1                 ; 6       ;
 ; input1[22]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~44                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~44                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~20                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~41                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~81                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~147                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~87                    ; 1                 ; 6       ;
 ; input1[20]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~40                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~40                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~20                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~43                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~75                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~137                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~81                    ; 0                 ; 6       ;
 ; input1[19]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~38                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~38                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~22                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~61                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~72                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~132                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~78                    ; 0                 ; 6       ;
 ; input1[17]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~34                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~34                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~22                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~50                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~66                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~122                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~72                    ; 1                 ; 6       ;
 ; input1[18]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~36                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~36                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~23                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~43                   ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~69                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~127                    ; 1                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~75                    ; 1                 ; 6       ;
 ; input1[16]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~32                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~32                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~23                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftRight1~27                   ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~63                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~117                    ; 0                 ; 6       ;
 ;      - MainUla:mainUla|ShiftLeft0~69                    ; 0                 ; 6       ;
 ; input2[1]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~2                           ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~2                           ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~43                     ; 0                 ; 6       ;
 ; input2[2]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~4                           ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~4                           ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~53                     ; 0                 ; 6       ;
 ; input2[3]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~6                           ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~6                           ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~60                     ; 0                 ; 6       ;
 ; input2[4]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~8                           ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~8                           ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~63                     ; 1                 ; 6       ;
 ; input2[5]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~10                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~10                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~71                     ; 0                 ; 6       ;
 ; input2[6]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~12                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~12                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~75                     ; 1                 ; 6       ;
 ; input2[7]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~14                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~14                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~79                     ; 0                 ; 6       ;
 ; input2[8]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~16                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~16                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~83                     ; 0                 ; 6       ;
 ; input2[9]                                               ;                   ;         ;
-;      - MainUla:mainUla|Add0~18                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~18                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~87                     ; 0                 ; 6       ;
 ; input2[10]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~20                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~20                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~91                     ; 0                 ; 6       ;
 ; input2[11]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~22                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~22                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~95                     ; 0                 ; 6       ;
 ; input2[12]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~24                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~24                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~99                     ; 0                 ; 6       ;
 ; input2[13]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~26                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~26                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~104                    ; 1                 ; 6       ;
 ; input2[14]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~28                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~28                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~108                    ; 1                 ; 6       ;
 ; input2[15]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~30                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~30                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~112                    ; 0                 ; 6       ;
 ; input2[16]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~32                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~32                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~117                    ; 1                 ; 6       ;
 ; input2[17]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~34                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~34                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~122                    ; 0                 ; 6       ;
 ; input2[18]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~36                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~36                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~127                    ; 1                 ; 6       ;
 ; input2[19]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~38                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~38                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~132                    ; 0                 ; 6       ;
 ; input2[20]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~40                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~40                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~137                    ; 1                 ; 6       ;
 ; input2[21]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~42                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~42                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~142                    ; 0                 ; 6       ;
 ; input2[22]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~44                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~44                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~147                    ; 0                 ; 6       ;
 ; input2[23]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~46                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~46                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~152                    ; 0                 ; 6       ;
 ; input2[24]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~48                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~48                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~159                    ; 0                 ; 6       ;
 ; input2[25]                                              ;                   ;         ;
 ; input2[26]                                              ;                   ;         ;
 ; input2[27]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~54                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~54                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla~174                    ; 1                 ; 6       ;
 ; input2[28]                                              ;                   ;         ;
 ; input2[29]                                              ;                   ;         ;
 ; input2[30]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~60                          ; 0                 ; 6       ;
+;      - MainUla:mainUla|Add1~60                          ; 0                 ; 6       ;
 ;      - MainUla:mainUla|resultUla[30]~195                ; 0                 ; 6       ;
 ; input2[31]                                              ;                   ;         ;
-;      - MainUla:mainUla|Add0~62                          ; 1                 ; 6       ;
+;      - MainUla:mainUla|Add1~62                          ; 1                 ; 6       ;
 ;      - MainUla:mainUla|resultUla[31]~199                ; 1                 ; 6       ;
 ; aluOp[0]                                                ;                   ;         ;
 ;      - AluControl:aluControl|Equal1~0                   ; 0                 ; 0       ;
@@ -2250,7 +2250,7 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2258,10 +2258,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file C:/Users/Aluno/Desktop/lol/Ula-32bits-crop/output_files/Ula.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5168 megabytes
-    Info: Processing ended: Tue Jun 25 15:55:58 2019
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 5167 megabytes
+    Info: Processing ended: Tue Jun 25 17:12:06 2019
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +----------------------------+
