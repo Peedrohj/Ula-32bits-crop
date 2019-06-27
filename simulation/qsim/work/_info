@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Aluno/Desktop/lol/Ula-32bits-crop/simulation/qsim
+vUla
+Z0 !s110 1561570383
+!i10b 1
+!s100 Da6R47`WcPD361ELCZa<K2
+I]MCLSLYDHDkL_?Ba=T:>42
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dC:/Users/aluno/Desktop/Ula-32bits-crop/simulation/qsim
+w1561570377
+8Ula.vo
+FUla.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1561570383.282000
+!s107 Ula.vo|
+!s90 -work|work|Ula.vo|
+!i113 1
+Z4 o-work work
+n@ula
+vUla_vlg_check_tst
+R0
+!i10b 1
+!s100 :3=oW5V]B>D9;YjP_NmmW0
+I8CBZc?QDnD8oamJNCaRQ>2
+R1
+R2
+Z5 w1561570372
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 64
+R3
+r1
+!s85 0
+31
+Z8 !s108 1561570383.703000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+n@ula_vlg_check_tst
+vUla_vlg_sample_tst
+R0
+!i10b 1
+!s100 EHh4fU^:SHIKD80hS6aLm2
+I_fZkWMzZEUKSRicIEhEYg0
+R1
+R2
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@ula_vlg_sample_tst
+vUla_vlg_vec_tst
+R0
+!i10b 1
+!s100 8Yib0[nfB>3]I?STPZQ8`0
+IXo9lHDDefjEcj5JCgT8Im2
+R1
+R2
+R5
+R6
+R7
+L0 760
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@ula_vlg_vec_tst

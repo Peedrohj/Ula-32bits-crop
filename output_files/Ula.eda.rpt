@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Ula
-Tue Jun 25 13:09:45 2019
+Wed Jun 26 14:32:57 2019
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Jun 25 13:09:45 2019 ;
+; EDA Netlist Writer Status ; Successful - Wed Jun 26 14:32:57 2019 ;
 ; Revision Name             ; Ula                                   ;
 ; Top-level Entity Name     ; Ula                                   ;
 ; Family                    ; Cyclone IV E                          ;
@@ -51,8 +51,7 @@ agreement for further details.
 ; Option                                                                                            ; Setting                   ;
 +---------------------------------------------------------------------------------------------------+---------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate netlist for functional simulation only                                                   ; Off                       ;
-; Time scale                                                                                        ; 1 ps                      ;
+; Generate netlist for functional simulation only                                                   ; On                        ;
 ; Truncate long hierarchy paths                                                                     ; Off                       ;
 ; Map illegal HDL characters                                                                        ; Off                       ;
 ; Flatten buses into individual nodes                                                               ; Off                       ;
@@ -67,20 +66,13 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                  ;
-+---------------------------------------------------------------------------------------------+
-; Generated Files                                                                             ;
-+---------------------------------------------------------------------------------------------+
-; /home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/Ula_6_1200mv_85c_slow.vo     ;
-; /home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/Ula_6_1200mv_0c_slow.vo      ;
-; /home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/Ula_min_1200mv_0c_fast.vo    ;
-; /home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/Ula.vo                       ;
-; /home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/Ula_6_1200mv_85c_v_slow.sdo  ;
-; /home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/Ula_6_1200mv_0c_v_slow.sdo   ;
-; /home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/Ula_min_1200mv_0c_v_fast.sdo ;
-; /home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/Ula_v.sdo                    ;
-+---------------------------------------------------------------------------------------------+
++----------------------------------------------------------------+
+; Simulation Generated Files                                     ;
++----------------------------------------------------------------+
+; Generated Files                                                ;
++----------------------------------------------------------------+
+; C:/Users/aluno/Desktop/Ula-32bits-crop/simulation/qsim//Ula.vo ;
++----------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -89,20 +81,27 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Tue Jun 25 13:09:44 2019
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Ula -c Ula
-Info (204019): Generated file Ula_6_1200mv_85c_slow.vo in folder "/home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Ula_6_1200mv_0c_slow.vo in folder "/home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Ula_min_1200mv_0c_fast.vo in folder "/home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Ula.vo in folder "/home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Ula_6_1200mv_85c_v_slow.sdo in folder "/home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Ula_6_1200mv_0c_v_slow.sdo in folder "/home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Ula_min_1200mv_0c_v_fast.sdo in folder "/home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Ula_v.sdo in folder "/home/arthur/Documents/Git/Ula-32bits-crop/simulation/modelsim/" for EDA simulation tool
+    Info: Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, the Altera Quartus II License Agreement,
+    Info: the Altera MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Altera and sold by Altera or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Wed Jun 26 14:32:55 2019
+Info: Command: quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/aluno/Desktop/Ula-32bits-crop/simulation/qsim/ Ula -c Ula
+Info (204019): Generated file Ula.vo in folder "C:/Users/aluno/Desktop/Ula-32bits-crop/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1073 megabytes
-    Info: Processing ended: Tue Jun 25 13:09:45 2019
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4736 megabytes
+    Info: Processing ended: Wed Jun 26 14:32:57 2019
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 
